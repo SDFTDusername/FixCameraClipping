@@ -1,11 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.example.example_mod.mixins",
+  "package": "com.sdftdusername.fix_camera_clipping.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [],
   "client": [
-    "MainMenuMixin"
+    "PlayerControllerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

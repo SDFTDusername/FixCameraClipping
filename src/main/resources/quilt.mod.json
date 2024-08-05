@@ -10,9 +10,9 @@
 
     "metadata": {
       "name": "${mod_name}",
-      "description": "A short description of your mod.",
+      "description": "A Quilt mod that fixes camera clipping.",
       "contributors": {
-        "Your name here": "Owner"
+        "SDFTDusername": "Programmer"
       },
 
       "contact": {
@@ -21,11 +21,11 @@
         "sources": "https://codeberg.org/CRModders/cosmic-quilt-example/"
       },
 
-      "icon": "assets/example_mod/icon.png"
+      "icon": "assets/fix_camera_clipping/icon.png"
     },
 
     "entrypoints": {
-      "init": "com.example.example_mod.ExampleMod"
+      "init": "com.sdftdusername.fix_camera_clipping.FixCameraClippingMod"
     },
 
     "depends": [
@@ -40,5 +40,5 @@
     ]
   },
 
-  "mixin": "example_mod.mixins.json"
+  "mixin": "fix_camera_clipping.mixins.json"
 }
