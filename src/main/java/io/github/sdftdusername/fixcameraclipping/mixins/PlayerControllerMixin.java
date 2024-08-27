@@ -1,4 +1,4 @@
-package com.sdftdusername.fix_camera_clipping.mixins;
+package io.github.sdftdusername.fixcameraclipping.mixins;
 
 import com.badlogic.gdx.graphics.Camera;
 import finalforeach.cosmicreach.entities.PlayerController;
@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(PlayerController.class)
 public class PlayerControllerMixin {
-    @Shadow private Camera playerCam;
+    @Shadow Camera playerCam;
 
     @Inject(method = "updateCamera", at = @At(value = "INVOKE", target = "Lfinalforeach/cosmicreach/entities/PlayerController;getEntity()Lfinalforeach/cosmicreach/entities/Entity;"))
     private void injected(CallbackInfo ci) {
